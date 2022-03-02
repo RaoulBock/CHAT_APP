@@ -1,4 +1,4 @@
-import { Entypo } from "react-native-vector-icons";
+import { Entypo, AntDesign } from "react-native-vector-icons";
 
 export const APP_PAGES = {
   LOGIN: "LOGIN",
@@ -74,6 +74,37 @@ export const APP_STYLE = {
     marginHorizontal: "10%",
     fontSize: 28,
     fontWeight: "500"
+  },
+  textHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    marginVertical: "14%"
+  },
+  textUsername: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginLeft: "-12%"
+  },
+  textUserProfilePicture: {
+    width: "10%",
+    height: "120%"
+  },
+  chatView: {
+    width: "100%",
+    backgroundColor: "#eee",
+    height: "80.5%"
+  },
+  textInput: {
+    backgroundColor: "#eee",
+    padding: "1.5%",
+    borderRadius: 50,
+    width: "70%"
+  },
+  grid: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly"
   }
 };
 
@@ -100,5 +131,18 @@ export const APP_ICON = {
       }}
     />
   ),
-  DOT: <Entypo name="dot-single" style={{ fontSize: 50 }} />
+  DOT: <Entypo name="dot-single" style={{ fontSize: 50 }} />,
+  BACK_BUTTON: <AntDesign name="back" style={{ fontSize: 30 }} />,
+  VERTICAL_DOTS: <Entypo name="dots-three-vertical" style={{ fontSize: 30 }} />,
+  PLUS: (
+    <AntDesign
+      name="plus"
+      style={{
+        fontSize: 20,
+        backgroundColor: "#eee",
+        borderRadius: 50,
+        padding: "4%"
+      }}
+    />
+  )
 };

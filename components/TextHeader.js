@@ -1,16 +1,21 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
-import React from "react";
-import { APP_ICON, APP_STYLE } from "../context/settings";
+import React, { useContext } from "react";
+import { APP_ICON, APP_PAGES, APP_STYLE } from "../context/settings";
+import { AppContext } from "../context/AppProvider";
 
 const TextHeader = () => {
+  const { navPage, setNavPage } = useContext(AppContext);
   return (
     <View style={styles.textHeader}>
-      <TouchableOpacity>{APP_ICON.MENU}</TouchableOpacity>
+      <TouchableOpacity onPress={() => setNavPage(APP_PAGES.HOME)}>
+        {APP_ICON.BACK_BUTTON}
+      </TouchableOpacity>
       <Image
         source={require("../assets/boy.png")}
-        style={styles.profilePicture}
+        style={styles.textUserProfilePicture}
       />
-      <TouchableOpacity>{APP_ICON.MENU}</TouchableOpacity>
+      <Text style={styles.textUsername}>Raoul Bock</Text>
+      <Text>{APP_ICON.VERTICAL_DOTS}</Text>
     </View>
   );
 };

@@ -1,16 +1,17 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { APP_STYLE } from "../../context/settings";
 import TextHeader from "../TextHeader";
+import ChatView from "../ChatView";
 
 const TextScreen = () => {
   return (
     <View>
-      <Text>hjkh</Text>
+      <TextHeader />
+      <ChatView />
     </View>
   );
 };
 
 export default TextScreen;
 
-const styles = StyleSheet.create(APP_STYLE);
+const styles = StyleSheet.create({});
