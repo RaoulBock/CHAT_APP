@@ -13,7 +13,9 @@ const ChatView = () => {
   return (
     <KeyboardAvoidingView behavior={"height"}>
       <View style={styles.chatView}>
-        <Text>fdsf</Text>
+        <View style={styles.chats}>
+          <Text>fdsf</Text>
+        </View>
       </View>
       <View style={styles.grid}>
         <TouchableOpacity>{APP_ICON.PLUS}</TouchableOpacity>

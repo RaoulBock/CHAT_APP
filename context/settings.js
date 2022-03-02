@@ -92,7 +92,7 @@ export const APP_STYLE = {
   },
   chatView: {
     width: "100%",
-    backgroundColor: "red",
+    backgroundColor: "#f1f2f6",
     height: "83.3%"
   },
   textInput: {
@@ -107,6 +107,9 @@ export const APP_STYLE = {
     justifyContent: "space-evenly",
     flex: 1,
     backgroundColor: "#eee"
+  },
+  chats: {
+    padding: "8%"
   }
 };
 
