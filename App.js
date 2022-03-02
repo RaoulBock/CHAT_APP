@@ -1,10 +1,11 @@
 import React, { useContext, useEffect } from "react";
 
-import { StyleSheet, View, SafeAreaView } from "react-native";
+import { StyleSheet, View, SafeAreaView, Slider } from "react-native";
 
-import { APP_PAGES } from "./context/settings";
+import { APP_PAGES, APP_ICON } from "./context/settings";
 import { AppProvider, AppContext } from "./context/AppProvider";
 import LoginScreen from "./components/screens/LoginScreen";
+import HomeScreen from "./components/screens/HomeScreen";
 
 const NavComp = () => {
   const { navPage, setNavPage } = useContext(AppContext);
@@ -21,6 +22,7 @@ const NavComp = () => {
         {navPage === APP_PAGES.LOGIN && (
           <LoginScreen setNavPage={onSetNavPage} />
         )}
+        {navPage === APP_PAGES.HOME && <HomeScreen />}
       </View>
     </SafeAreaView>
   );

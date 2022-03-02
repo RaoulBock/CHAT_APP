@@ -1,5 +1,8 @@
+import { Entypo } from "react-native-vector-icons";
+
 export const APP_PAGES = {
-  LOGIN: "LOGIN"
+  LOGIN: "LOGIN",
+  HOME: "HOME"
 };
 
 export const APP_STYLE = {
@@ -32,5 +35,63 @@ export const APP_STYLE = {
     color: "white",
     fontWeight: "800",
     textTransform: "uppercase"
+  },
+  Header: {
+    marginTop: "10%",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around"
+  },
+  profilePicture: {
+    width: "20%",
+    height: 70
+  },
+  messageProfilePicture: {
+    width: "30%",
+    height: 70
+  },
+  messageListing: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+    marginTop: "8%"
+  },
+  profileName: {
+    fontWeight: "bold",
+    fontSize: 12
+  },
+  messageListText: {
+    fontWeight: "bold"
+  },
+  messageSent: {
+    color: "gray",
+    fontSize: 10,
+    fontWeight: "500"
   }
+};
+
+export const APP_ICON = {
+  MENU: (
+    <Entypo
+      name="menu"
+      style={{
+        fontSize: 20,
+        backgroundColor: "#eee",
+        borderRadius: 50,
+        padding: "4%"
+      }}
+    />
+  ),
+  CAMERA: (
+    <Entypo
+      name="camera"
+      style={{
+        fontSize: 20,
+        backgroundColor: "#eee",
+        borderRadius: 50,
+        padding: "4%"
+      }}
+    />
+  ),
+  DOT: <Entypo name="dot-single" style={{ fontSize: 50 }} />
 };

@@ -11,6 +11,7 @@ const Input = (props) => {
         name={props.name}
         style={styles.loginInput}
         secureTextEntry={props.secureTextEntry}
+        onChange={props.onChange}
       />
     </View>
   );

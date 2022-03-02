@@ -3,7 +3,11 @@ import { APP_PAGES } from "./settings";
 
 export const AppContext = React.createContext({
   navPage: APP_PAGES.LOGIN,
-  setNavPage: (val) => {}
+  setNavPage: (val) => {},
+  username: "",
+  setUsername: (val) => {},
+  isOnline: false,
+  setIsOnline: (val) => {}
 });
 
 export const AppProvider = ({ children }) => {
