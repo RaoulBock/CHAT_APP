@@ -7,7 +7,6 @@ const TextScreen = () => {
   return (
     <View>
       <TextHeader />
-      <ChatView />
     </View>
   );
 };

@@ -92,8 +92,7 @@ export const APP_STYLE = {
   },
   chatView: {
     width: "100%",
-    backgroundColor: "#eee",
-    height: "80.5%"
+    backgroundColor: "#eee"
   },
   textInput: {
     backgroundColor: "#eee",
@@ -104,7 +103,8 @@ export const APP_STYLE = {
   grid: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
+    height: "96.1%"
   }
 };
 
