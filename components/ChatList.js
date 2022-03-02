@@ -2,7 +2,7 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import MessageListing from "./MessageListing";
 
-const ChatList = () => {
+const ChatList = ({ item }) => {
   const dataset = [
     {
       id: "1",
@@ -12,14 +12,14 @@ const ChatList = () => {
       messageSent: "12:00am"
     },
     {
-      id: "1",
+      id: "2",
       name: "Raoul Bock",
       message: "Sounds good!",
       isOnline: false,
       messageSent: "12:00am"
     },
     {
-      id: "1",
+      id: "3",
       name: "Raoul Bock",
       message: "Sounds good!",
       isOnline: false,

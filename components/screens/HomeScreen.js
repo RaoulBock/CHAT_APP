@@ -2,12 +2,14 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import Header from "../Header";
 import ChatList from "../ChatList";
+import HeadingText from "../heading/HeadingText";
 
-const HomeScreen = () => {
+const HomeScreen = ({ title }) => {
   return (
     <View>
       <View>
         <Header />
+        <HeadingText title="Messages" />
       </View>
       <View>
         <ChatList />

@@ -2,7 +2,8 @@ import { Entypo } from "react-native-vector-icons";
 
 export const APP_PAGES = {
   LOGIN: "LOGIN",
-  HOME: "HOME"
+  HOME: "HOME",
+  TEXT: "TEXT"
 };
 
 export const APP_STYLE = {
@@ -37,7 +38,8 @@ export const APP_STYLE = {
     textTransform: "uppercase"
   },
   Header: {
-    marginTop: "10%",
+    marginHorizontal: "2%",
+    marginVertical: "14%",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-around"
@@ -66,6 +68,11 @@ export const APP_STYLE = {
   messageSent: {
     color: "gray",
     fontSize: 10,
+    fontWeight: "500"
+  },
+  headerTitle: {
+    marginHorizontal: "10%",
+    fontSize: 28,
     fontWeight: "500"
   }
 };

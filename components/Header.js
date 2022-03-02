@@ -10,9 +10,7 @@ const Header = (props) => {
         source={require("../assets/boy.png")}
         style={styles.profilePicture}
       />
-      <TouchableOpacity onPress={openCamera}>
-        {APP_ICON.CAMERA}
-      </TouchableOpacity>
+      <TouchableOpacity>{APP_ICON.CAMERA}</TouchableOpacity>
     </View>
   );
 };

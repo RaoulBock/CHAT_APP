@@ -6,6 +6,7 @@ import { APP_PAGES, APP_ICON } from "./context/settings";
 import { AppProvider, AppContext } from "./context/AppProvider";
 import LoginScreen from "./components/screens/LoginScreen";
 import HomeScreen from "./components/screens/HomeScreen";
+import TextScreen from "./components/screens/TextScreen";
 
 const NavComp = () => {
   const { navPage, setNavPage } = useContext(AppContext);
@@ -23,6 +24,7 @@ const NavComp = () => {
           <LoginScreen setNavPage={onSetNavPage} />
         )}
         {navPage === APP_PAGES.HOME && <HomeScreen />}
+        {navPage === APP_PAGES.TEXT && <TextScreen />}
       </View>
     </SafeAreaView>
   );
