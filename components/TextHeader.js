@@ -17,7 +17,7 @@ const TextHeader = () => {
           style={styles.textUserProfilePicture}
         />
         <Text style={styles.textUsername}>Raoul Bock</Text>
-        <Text>{APP_ICON.VERTICAL_DOTS}</Text>
+        <Text>{APP_ICON.PHONE}</Text>
       </View>
       <ChatView />
     </View>

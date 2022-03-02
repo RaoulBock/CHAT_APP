@@ -92,10 +92,11 @@ export const APP_STYLE = {
   },
   chatView: {
     width: "100%",
-    backgroundColor: "#eee"
+    backgroundColor: "red",
+    height: "83.3%"
   },
   textInput: {
-    backgroundColor: "#eee",
+    backgroundColor: "#fff",
     padding: "1.5%",
     borderRadius: 50,
     width: "70%"
@@ -104,7 +105,8 @@ export const APP_STYLE = {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-evenly",
-    height: "96.1%"
+    flex: 1,
+    backgroundColor: "#eee"
   }
 };
 
@@ -116,7 +118,7 @@ export const APP_ICON = {
         fontSize: 20,
         backgroundColor: "#eee",
         borderRadius: 50,
-        padding: "4%"
+        padding: "2%"
       }}
     />
   ),
@@ -127,7 +129,7 @@ export const APP_ICON = {
         fontSize: 20,
         backgroundColor: "#eee",
         borderRadius: 50,
-        padding: "4%"
+        padding: "2%"
       }}
     />
   ),
@@ -141,8 +143,9 @@ export const APP_ICON = {
         fontSize: 20,
         backgroundColor: "#eee",
         borderRadius: 50,
-        padding: "4%"
+        padding: "2%"
       }}
     />
-  )
+  ),
+  PHONE: <Entypo name="phone" style={{ fontSize: 30 }} />
 };

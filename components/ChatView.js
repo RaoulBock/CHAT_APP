@@ -11,19 +11,16 @@ import { APP_STYLE, APP_ICON } from "../context/settings";
 
 const ChatView = () => {
   return (
-    <View>
-      <KeyboardAvoidingView behavior={"padding"}>
-        <View style={styles.chatView}>
-          <Text>fdsf</Text>
-        </View>
-
-        <View style={styles.grid}>
-          <TouchableOpacity>{APP_ICON.PLUS}</TouchableOpacity>
-          <TextInput placeholder="" style={styles.textInput} />
-          <TouchableOpacity>{APP_ICON.CAMERA}</TouchableOpacity>
-        </View>
-      </KeyboardAvoidingView>
-    </View>
+    <KeyboardAvoidingView behavior={"height"}>
+      <View style={styles.chatView}>
+        <Text>fdsf</Text>
+      </View>
+      <View style={styles.grid}>
+        <TouchableOpacity>{APP_ICON.PLUS}</TouchableOpacity>
+        <TextInput placeholder="" style={styles.textInput} />
+        <TouchableOpacity>{APP_ICON.CAMERA}</TouchableOpacity>
+      </View>
+    </KeyboardAvoidingView>
   );
 };
 
