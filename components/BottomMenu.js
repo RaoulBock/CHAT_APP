@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import React from "react";
+import React, { useContext } from "react";
 import { APP_ICON, APP_PAGES, APP_STYLE } from "../context/settings";
 
 import { AppContext, AppProvider } from "../context/AppProvider";
@@ -8,8 +8,13 @@ const BottomMenu = () => {
   const { navPage, setNavPage } = useContext(AppContext);
   return (
     <View style={styles.bottomBar}>
-      <View style={styles.grid}>
-        <TouchableOpacity style={{ marginHorizontal: "2%" }}>
+      <View style={styles.bottomBarGrid}>
+        <TouchableOpacity
+          style={{ marginHorizontal: "2%" }}
+          onPress={
+            (() => setNavPage(APP_PAGES.HOME), console.log("clicked", navPage))
+          }
+        >
           {APP_ICON.HOME}
         </TouchableOpacity>
         <TouchableOpacity style={{ marginHorizontal: "2%" }}>

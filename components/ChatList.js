@@ -24,6 +24,34 @@ const ChatList = ({ item }) => {
       message: "Sounds good!",
       isOnline: false,
       messageSent: "12:00am"
+    },
+    {
+      id: "4",
+      name: "Raoul Bock",
+      message: "Sounds good!",
+      isOnline: false,
+      messageSent: "12:00am"
+    },
+    {
+      id: "5",
+      name: "Raoul Bock",
+      message: "Sounds good!",
+      isOnline: false,
+      messageSent: "12:00am"
+    },
+    {
+      id: "6",
+      name: "Raoul Bock",
+      message: "Sounds good!",
+      isOnline: false,
+      messageSent: "12:00am"
+    },
+    {
+      id: "7",
+      name: "Raoul Bock",
+      message: "Sounds good!",
+      isOnline: false,
+      messageSent: "12:00am"
     }
   ];
 

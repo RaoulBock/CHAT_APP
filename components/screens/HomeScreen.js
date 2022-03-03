@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../Header";
 import ChatList from "../ChatList";
 import HeadingText from "../heading/HeadingText";
+import BottomMenu from "../BottomMenu";
 
 const HomeScreen = ({ title }) => {
   return (
@@ -13,6 +14,9 @@ const HomeScreen = ({ title }) => {
       </View>
       <View>
         <ChatList />
+      </View>
+      <View>
+        <BottomMenu />
       </View>
     </View>
   );

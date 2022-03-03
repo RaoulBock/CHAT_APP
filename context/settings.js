@@ -108,8 +108,19 @@ export const APP_STYLE = {
     flex: 1,
     backgroundColor: "#eee"
   },
+  bottomBarGrid: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    flex: 1
+  },
   chats: {
     padding: "8%"
+  },
+  bottomBar: {
+    height: "20%",
+    width: "100%",
+    marginTop: "62%"
   }
 };
 
@@ -151,7 +162,7 @@ export const APP_ICON = {
     />
   ),
   PHONE: <Entypo name="phone" style={{ fontSize: 30 }} />,
-  HOME: <AntDesign name="home" style={{ fontSize: 18 }} />,
-  CONTACT: <AntDesign name="contacts" style={{ fontSize: 18 }} />,
-  SETTING: <AntDesign name="settings" style={{ fontSize: 18 }} />
+  HOME: <AntDesign name="home" style={{ fontSize: 28 }} />,
+  CONTACT: <AntDesign name="contacts" style={{ fontSize: 28 }} />,
+  SETTING: <AntDesign name="setting" style={{ fontSize: 28 }} />
 };
