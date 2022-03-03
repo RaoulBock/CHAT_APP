@@ -93,7 +93,7 @@ export const APP_STYLE = {
   chatView: {
     width: "100%",
     backgroundColor: "#f1f2f6",
-    height: "83.3%"
+    height: "83.4%"
   },
   textInput: {
     backgroundColor: "#fff",
@@ -150,5 +150,8 @@ export const APP_ICON = {
       }}
     />
   ),
-  PHONE: <Entypo name="phone" style={{ fontSize: 30 }} />
+  PHONE: <Entypo name="phone" style={{ fontSize: 30 }} />,
+  HOME: <AntDesign name="home" style={{ fontSize: 18 }} />,
+  CONTACT: <AntDesign name="contacts" style={{ fontSize: 18 }} />,
+  SETTING: <AntDesign name="settings" style={{ fontSize: 18 }} />
 };
